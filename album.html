@@ -38,15 +38,6 @@
 
         body {
             margin: 0;
-            height: 100vh;
-            background: url('images/blackpink_main2.jpg');
-            background-position: center 168px;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .yg {
-            white-space: nowrap;
         }
 
         p {
@@ -58,7 +49,10 @@
             font-size: 12px;
             font-family: 'Nanum Gothic', sans-serif;
         }
-
+        #yg {
+            width:75px; 
+            position: absolute; top: 1040px; left: 210px;
+        }
         .sns {
             padding:0;
             position: fixed;
@@ -109,6 +103,49 @@
             height: 200px;
             padding: 40px;
         }
+        @media only screen and (max-width: 375px) {
+            .nav {
+                font-size: 1.8rem;
+
+            }
+            #yg {
+                position: absolute;
+                width: 60px;
+                left: 10px;
+                top: 870px;
+            }
+            p {
+                font-size: 10px;
+                position: absolute;
+                left: 10px;
+                top: 870px;
+                padding-left: 70px;
+            }
+
+            .col1 {
+                top: 300px;
+                left: 0;
+                margin: 0;
+            }
+            .col1 ul {
+                padding-left: 5px;
+            }
+            .col1 li img {
+                width: 100px;
+                height: 100px;
+                padding: 20px;
+            }
+            .col2 {
+                top: 580px;
+                left: 0;
+                margin: 0;
+            }
+            .col2 li img {
+                width: 100px;
+                height: 100px;
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 
@@ -145,7 +182,7 @@
     </ul>
 
 
-    <img src="images/yg.png" alt="x" style="width:75px; position: absolute; top: 1040px; left: 210px;">
+    <img id="yg" src="images/yg.png" alt="x">
 
     <ul class="col1">
         <li><a href="https://www.melon.com/album/detail.htm?albumId=2703168" target="_blank"><img
