@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <title>BLACKPINK</title>
     <style>
@@ -40,14 +41,6 @@
             background-color: black;
         }
 
-        /* body {
-            margin: 0;
-            background: url('images/fullscreen.jpg');
-            background-position: center 168px;
-            background-repeat: no-repeat;
-            background-size: cover;
-        } */
-
         p {
             position: absolute;
             top: 1040px;
@@ -57,7 +50,10 @@
             font-size: 12px;
             font-family: 'Nanum Gothic', sans-serif;
         }
-
+        #yg {
+            width:75px; 
+            position: absolute; top: 1040px; left: 210px;
+        }
         .sns {
             padding: 0;
             position: fixed;
@@ -111,6 +107,37 @@
         .container:hover .textbox {
             opacity: 1;
         }
+        @media only screen and (max-width: 375px) {
+            .nav {
+                font-size: 1.8rem;
+
+            }
+            #yg {
+                position: absolute;
+                width: 60px;
+                left: 10px;
+                top: 500px;
+            }
+            p {
+                font-size: 10px;
+                position: absolute;
+                left: 10px;
+                top: 500px;
+                padding-left: 70px;
+            }
+            body {
+                background-size: 100vw;
+                background-position: center 276px;
+            }
+            .container .textbox iframe {
+                width: auto;
+                height: auto;
+            }
+            .container .textbox {
+                padding: 10px 10px;
+            }
+        }
+
     </style>
 </head>
 
@@ -146,7 +173,7 @@
                 target="_blank" alt="Share on kakaostory"><img src="images/sns_ka.png"></a></li>
     </ul>
 
-    <img src="images/yg.png" alt="x" style="width:75px; position: absolute; top: 1040px; left: 210px;">
+    <img id="yg" src="images/yg.png" alt="x">
 
     <div class="container">
         <img src="images/fullscreen.jpg" alt="x" class="full">
