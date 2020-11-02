@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>BLACKPINK</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: rgb(247, 131, 193);
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+        }
+
+        .nav li {
+            margin: 0px 70px;
+            padding: 0;
+            display: inline-block;
+        }
+
+        li:hover>a {
+            color: white;
+        }
+
+        .main {
+            background-color: black;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            background: url('images/blackpink_main2.jpg');
+            background-position: center 168px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .yg {
+            white-space: nowrap;
+        }
+
+        p {
+            position: absolute;
+            top: 1040px;
+            padding-left: 300px;
+            margin-bottom: 30px;
+            color: gray;
+            font-size: 12px;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        .sns {
+            padding:0;
+            position: fixed;
+            bottom: 0;
+            right: 20px;
+        }
+
+        .sns li {
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .sns li img {
+            border-radius: 50%;
+            width: 40px;
+        }
+
+        .col1 {
+            list-style-type: none;
+            position: absolute;
+            top: 300px;
+            left: 150px;
+        }
+
+        .col1 li {
+            display: inline-block;
+        }
+
+        .col1 li img {
+            width: 200px;
+            height: 200px;
+            padding: 40px;
+        }
+
+        .col2 {
+            list-style-type: none;
+            position: absolute;
+            top: 600px;
+            left: 150px;
+        }
+
+        .col2 li {
+            display: inline-block;
+        }
+
+        .col2 li img {
+            width: 200px;
+            height: 200px;
+            padding: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <a href="index.html">
+            <img src="images/blackpink_logo.jpg" alt="표시없음" style="display: block; margin: 0 auto; width: 350px;">
+        </a>
+    </div>
+
+    <ul class="nav">
+        <li><a href="blackpink.html">BLACKPINK</a></li>
+        <li><a href="member.html">MEMBER</a></li>
+        <li><a href="album.html">ALBUM</a></li>
+        <li><a href="photo.html">PHOTO</a></li>
+    </ul>
+
+    <p>YG Entertainment의 모든 컨텐츠는 저작권의 보호를 받고 있습니다.<br>
+        Copyright YG Entertainment All Rights Reserved.</p>
+
+    <ul class="sns">
+        <li><a href="#"
+                onclick="javascript:window.open('http://share.naver.com/web/shareView.nhn?url=' +encodeURIComponent(document.URL)+'&title='+encodeURIComponent(document.title), 'naversharedialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                target="_blank" alt="Share on Naver"><img src="images/sns_naver.png" alt="x"></a></li>
+        <li><a href="#"
+                onclick="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=' +encodeURIComponent(document.URL)+'&t='+encodeURIComponent(document.title), 'facebooksharedialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                target="_blank" alt="Share on Facebook"><img src="images/sns_face.png" alt="x"></a></li>
+        <li><a href="#"
+                onclick="javascript:window.open('https://twitter.com/intent/tweet?text=[%EA%B3%B5%EC%9C%A0]%20' +encodeURIComponent(document.URL)+'%20-%20'+encodeURIComponent(document.title), 'twittersharedialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                target="_blank" alt="Share on Twitter"><img src="images/sns_tw.png" alt="x"></a></li>
+        <li><a href="#"
+                onclick="javascript:window.open('https://story.kakao.com/s/share?url=' +encodeURIComponent(document.URL), 'kakaostorysharedialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes, height=400,width=600');return false;"
+                target="_blank" alt="Share on kakaostory"><img src="images/sns_ka.png" alt="x"></a></li>
+    </ul>
+
+
+    <img src="images/yg.png" alt="x" style="width:75px; position: absolute; top: 1040px; left: 210px;">
+
+    <ul class="col1">
+        <li><a href="https://www.melon.com/album/detail.htm?albumId=2703168" target="_blank"><img
+                    src="images/square_one.jpg" alt="x"></a></li>
+        <li><a href="https://www.melon.com/album/detail.htm?albumId=10011491" target="_blank"><img
+                    src="images/square_two.jpg" alt="x"></a></li>
+        <li><a href="https://www.melon.com/album/detail.htm?albumId=10176415" target="_blank"><img
+                    src="images/square_up.jpg" alt="x"></a></li>
+        <li><a href="https://www.melon.com/album/detail.htm?albumId=10072696" target="_blank"><img src="images/asif.jpg"
+                    alt="x"></a></li>
+    </ul>
+    <ul class="col2">
+        <li><a href="https://www.melon.com/song/detail.htm?songId=32720013" target="_blank"><img src="images/howyou.jpg"
+                    alt="x"></a></li>
+        <li><a href="https://www.melon.com/song/detail.htm?songId=32889003" target="_blank"><img src="images/ice.jpg"
+                    alt="x"></a></li>
+        <li><a href="https://www.melon.com/album/detail.htm?albumId=10498032" target="_blank"><img src="images/the.jpg"
+                    alt="x"></a></li>
+        <li><a href="https://www.melon.com/song/detail.htm?songId=31717822" target="_blank"><img src="images/kill.jpg"
+                    alt="x"></a></li>
+    </ul>
+
+</body>
+
+</html>
